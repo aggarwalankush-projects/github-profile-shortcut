@@ -1,0 +1,26 @@
+{
+  "name": "Github Profile Shortcut",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Adds github profile button in header",
+  "homepage_url": "https://github.com/aggarwalankush-projects/github-profile-shortcut",
+  "icons": {
+    "16": "icons/icon16.png",
+    "64": "icons/icon64.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "https://github.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "js": [
+        "js/jquery/jquery-3.2.1.min.js",
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}
