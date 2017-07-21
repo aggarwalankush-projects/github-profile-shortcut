@@ -1,6 +1,6 @@
 {
   "name": "Github Profile Shortcut",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "manifest_version": 2,
   "description": "Adds github profile button in header",
   "homepage_url": "https://github.com/aggarwalankush-projects/github-profile-shortcut",
