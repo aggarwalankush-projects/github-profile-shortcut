@@ -1,5 +1,5 @@
-var profileName = $('.header-nav-current-user strong').text();
-var navigationList = $('ul[role="navigation"]');
-var profileButton = '<li><a href="/' + profileName +
-  '" class="js-selected-navigation-item HeaderNavlink px-2">Profile</a></li>';
-navigationList.append(profileButton);
+var profileName = document.querySelector('.header-nav-current-user strong').textContent;
+var navigationList = document.querySelector('ul[role="navigation"]');
+var className = navigationList.querySelector('li > a').className;
+var profileButton = '<li><a href="/' + profileName + '" class="' + className + '">Profile</a></li>';
+navigationList.innerHTML += profileButton;
